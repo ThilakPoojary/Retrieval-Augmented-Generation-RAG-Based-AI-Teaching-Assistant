@@ -45,8 +45,18 @@ prompt = f'''I am teaching about AI, you can predict which chunk is in which vid
 
 {new_df[["number","chunk_id","start","end","text"]].to_json(orient="records")}
 
+
+
 "{incoming_query}"
+
+**3. INSTRUCTIONS & OUTPUT FORMAT:**
+* **Analyze:** Use ONLY the provided CONTEXT to formulate your answer.
+* **Answer:** Address the USER QUERY directly.
+* **Source Citation:** After your answer, you MUST provide a concise list of sources.
+* **Format for Citations:** For each relevant chunk, provide the **Video Number**, the **Start Time**, and the **End Time** where the content is discussed.
+
 User asked these questions related to video chunks, you have to answer where and how much content is taught in which video and at what timestamp and guide the user to go to the particular video and say in which video this content exists. If the user asks any unrelated questions then you can guide them to ask questions related to the course only.
+f the USER QUERY cannot be answered using the provided CONTEXT, state clearly that the information is not in the course material and ask the user to refine their question.
 '''
 
 
@@ -58,9 +68,11 @@ with open("prompt.txt", "w") as f:
 
 def inference(prompts):
     r = requests.post("http://localhost:11434/api/generate", json={
-        "model": "llama3.2",
+        ##"model": "deepseek-r1",
+        "model": "mistral",
         "prompt": prompts,
-        "stream": False
+        "stream": False,
+        
     })
     response = r.json()
     print(response)

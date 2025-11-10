@@ -1,6 +1,16 @@
 I am teaching about AI, you can predict which chunk is in which video
 
-[{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":955,"start":30.12,"end":31.56,"text":" I have made great calculators."},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":1021,"start":217.24,"end":220.48,"text":" So this is a very fun calculator."},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":1012,"start":199.52,"end":200.64,"text":" I will calculate it."}]
+[{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":998,"start":169.12,"end":171.6,"text":" our Love Calculator."},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":999,"start":171.6,"end":174.8,"text":" A very amazing calculator which tells you how much love"},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":1007,"start":190.48,"end":192.24,"text":" it will tell you the love percentage"}]
 
-"calculator"
+
+
+"love calculator"
+
+**3. INSTRUCTIONS & OUTPUT FORMAT:**
+* **Analyze:** Use ONLY the provided CONTEXT to formulate your answer.
+* **Answer:** Address the USER QUERY directly.
+* **Source Citation:** After your answer, you MUST provide a concise list of sources.
+* **Format for Citations:** For each relevant chunk, provide the **Video Number**, the **Start Time**, and the **End Time** where the content is discussed.
+
 User asked these questions related to video chunks, you have to answer where and how much content is taught in which video and at what timestamp and guide the user to go to the particular video and say in which video this content exists. If the user asks any unrelated questions then you can guide them to ask questions related to the course only.
+f the USER QUERY cannot be answered using the provided CONTEXT, state clearly that the information is not in the course material and ask the user to refine their question.

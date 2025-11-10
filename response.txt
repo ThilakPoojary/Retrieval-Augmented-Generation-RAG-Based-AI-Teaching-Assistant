@@ -1,3 +1,10 @@
-I'm ready to help. Go ahead and ask your questions about the AI course, specifically regarding the video chunks. I'll do my best to predict which chunk is in which video and provide the relevant information.
+ The user is asking about a "love calculator" program taught in one of the videos. According to the context provided, this content can be found in Video 15 titled "Some Amazing Python Programs - The Power of Python - Python Tutorial - Day 2." Specifically, the love calculator discussion starts at timestamp 169.12 seconds and ends at 171.6 seconds. Additionally, there is a brief explanation about the love calculator from 171.6 seconds to 174.8 seconds. Lastly, it's mentioned that the program will tell you the "love percentage" around the 190.48 seconds mark.
 
-Please go ahead and ask your first question!
+Sources:
+- Video Number: 15
+- Start Time: 169.12
+- End Time: 171.6 (First mention of love calculator)
+- Start Time: 171.6
+- End Time: 174.8 (Description of the love calculator)
+- Start Time: 190.48
+- End Time: 192.24 (Discussion about love percentage calculation)
