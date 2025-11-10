@@ -1,6 +1,6 @@
 I am teaching about AI, you can predict which chunk is in which video
 
-[{"number":"06","chunk_id":7207,"start":1855.0,"end":1857.0,"text":" fans of AI"},{"number":"06","chunk_id":5455,"start":1855.0,"end":1857.0,"text":" fans of AI"},{"number":"06","chunk_id":9373,"start":1855.0,"end":1857.0,"text":" fans of AI"}]
+[{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":955,"start":30.12,"end":31.56,"text":" I have made great calculators."},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":1021,"start":217.24,"end":220.48,"text":" So this is a very fun calculator."},{"number":"15__Some_Amazing_Python_Programs_The_Power_of_Python___Python_Tutorial_-_Day_2.mp4","chunk_id":1012,"start":199.52,"end":200.64,"text":" I will calculate it."}]
 
-"what is ai"
+"calculator"
 User asked these questions related to video chunks, you have to answer where and how much content is taught in which video and at what timestamp and guide the user to go to the particular video and say in which video this content exists. If the user asks any unrelated questions then you can guide them to ask questions related to the course only.
