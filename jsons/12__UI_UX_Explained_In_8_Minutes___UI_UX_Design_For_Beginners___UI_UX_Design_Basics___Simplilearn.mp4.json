@@ -1,0 +1,557 @@
+{
+  "chunks": [
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 0.0,
+      "end": 2.0,
+      "text": " Hi there, meet Sam."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 2.0,
+      "end": 6.0,
+      "text": " Sam is a curious college student who loves technology,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 6.0,
+      "end": 10.0,
+      "text": " but doesn't really know much about how things are designed on apps and websites."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 10.0,
+      "end": 15.0,
+      "text": " One day, Sam's best friend showed them a clunky old website."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 15.0,
+      "end": 21.0,
+      "text": " It was hard to read, buttons didn't work properly, and the colors hurt Sam's eyes."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 21.0,
+      "end": 24.0,
+      "text": " Sam said, why is this website so bad?"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 24.0,
+      "end": 31.0,
+      "text": " Sam started doing research online, trying to understand how websites are designed and how they can improve."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 31.0,
+      "end": 36.0,
+      "text": " That's when Sam stumbled into the exciting world of UI and UX."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 36.0,
+      "end": 42.0,
+      "text": " Let's go on a journey with Sam to find out what UI-UX is and why it's so important."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 42.0,
+      "end": 46.0,
+      "text": " Sam learned that UI stands for user interface."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 46.0,
+      "end": 51.0,
+      "text": " It's what you see on a screen, buttons, colors, text, and layout."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 51.0,
+      "end": 55.0,
+      "text": " Think of it like the controls on a video game or the dashboard of a car."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 55.0,
+      "end": 62.0,
+      "text": " If the interface is well designed, you know exactly where to press or click without even thinking about it."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 62.0,
+      "end": 66.0,
+      "text": " UX, on the other hand, stands for user experience."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 66.0,
+      "end": 70.0,
+      "text": " It's all about how you feel when using a website or an app."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 70.0,
+      "end": 73.0,
+      "text": " Does it make your life easier or harder?"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 73.0,
+      "end": 79.0,
+      "text": " For example, if you can easily find what you're looking for, the UX is good."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 79.0,
+      "end": 84.0,
+      "text": " If you feel confused or frustrated, the UX isn't doing its job."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 84.0,
+      "end": 89.0,
+      "text": " Together, UI and UX are like the perfect recipe."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 89.0,
+      "end": 95.0,
+      "text": " UI is the presentation, the look and feel, while UX is the flavor,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 95.0,
+      "end": 99.0,
+      "text": " making sure the whole experience is enjoyable and effective."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 99.0,
+      "end": 104.0,
+      "text": " Sam had an idea for an app that helped students organize their homework."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 104.0,
+      "end": 109.0,
+      "text": " But every time they showed the app designed to their friends, the feedback was disappointing."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 109.0,
+      "end": 112.0,
+      "text": " The buttons were too small to tap."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 112.0,
+      "end": 115.0,
+      "text": " Nobody could figure out where to add assignments."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 115.0,
+      "end": 118.0,
+      "text": " The colors were so bright that it hurt their eyes."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 118.0,
+      "end": 123.0,
+      "text": " The app felt messy, like too much was happening on one screen."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 123.0,
+      "end": 126.0,
+      "text": " Sam realized something important."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 126.0,
+      "end": 133.0,
+      "text": " The way the app looked, UI, and the way it worked, UX weren't right."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 133.0,
+      "end": 138.0,
+      "text": " That's when Sam decided to dive into the world of UI, UX to fix it."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 138.0,
+      "end": 142.0,
+      "text": " Sam realized that to create a great homework organization app,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 142.0,
+      "end": 147.0,
+      "text": " they needed to start by understanding what users truly wanted."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 147.0,
+      "end": 150.0,
+      "text": " Instead of guessing, Sam decided to talk to their friends,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 150.0,
+      "end": 152.0,
+      "text": " asking them questions like,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 152.0,
+      "end": 155.0,
+      "text": " How do you currently organize your homework?"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 155.0,
+      "end": 157.0,
+      "text": " What frustrates you about it?"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 158.0,
+      "end": 164.0,
+      "text": " They also observed their friends using similar apps to see what worked well and what didn't."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 164.0,
+      "end": 170.0,
+      "text": " To make this process easier, Sam used tools like Google Forms to create surveys"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 170.0,
+      "end": 175.0,
+      "text": " and collect feedback and notion to organize the responses into categories like"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 175.0,
+      "end": 179.0,
+      "text": " Must have features and common issues."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 179.0,
+      "end": 184.0,
+      "text": " By the end of this research, Sam discovered that users wanted an app that was simple,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 184.0,
+      "end": 189.0,
+      "text": " fast, and visually calming, with features like an easy way to add assignments"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 189.0,
+      "end": 192.0,
+      "text": " and a color coding system for subjects."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 192.0,
+      "end": 198.0,
+      "text": " With a clear understanding of user needs, Sam moved on to sketching a plan for the app."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 198.0,
+      "end": 205.0,
+      "text": " This stage, called wireframing, was all about creating a basic outline of the app's structure"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 205.0,
+      "end": 208.0,
+      "text": " without worrying about colors or details."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 208.0,
+      "end": 211.0,
+      "text": " Sam drew a rough sketch of the home screen,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 211.0,
+      "end": 218.0,
+      "text": " ensuring it had large, clear buttons for essential actions like add assignment and view calendar."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 218.0,
+      "end": 226.0,
+      "text": " They also planned a smooth navigation flow so users could easily move from one screen to another without feeling lost."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 226.0,
+      "end": 231.0,
+      "text": " To bring these sketches to life, Sam used tools like Figma,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 231.0,
+      "end": 236.0,
+      "text": " a beginner-friendly tool for creating digital wireframes, and Balsami,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 236.0,
+      "end": 241.0,
+      "text": " which allowed them to brainstorm quickly with hand-drawn style designs."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 241.0,
+      "end": 247.0,
+      "text": " This step helped Sam focus on the app's structure and how users would interact with it."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 247.0,
+      "end": 252.0,
+      "text": " Once the wireframes were ready, it was time to think about how the app would look."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 252.0,
+      "end": 258.0,
+      "text": " This stage, called visual design, was about choosing colors, fonts, and icons"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 258.0,
+      "end": 262.0,
+      "text": " that would make the app visually appealing and user-friendly."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 262.0,
+      "end": 267.0,
+      "text": " Sam selected soft pastel colors to create a calming vibe"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 267.0,
+      "end": 273.0,
+      "text": " and picked clean, simple fonts that were easy to read, even on small screens."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 273.0,
+      "end": 278.0,
+      "text": " To make the app more intuitive, they added friendly, recognizable icons,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 278.0,
+      "end": 282.0,
+      "text": " such as a calendar icon for the View Calendar button."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 282.0,
+      "end": 288.0,
+      "text": " Sam relied on tools like Canva to experiment with different visual styles"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 288.0,
+      "end": 293.0,
+      "text": " and create mood boards and coolers to generate harmonious color schemes."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 293.0,
+      "end": 299.0,
+      "text": " This step ensured the app looked professional and consistent while being pleasant to use."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 299.0,
+      "end": 307.0,
+      "text": " While the app's design was taking shape, Sam noticed that users had trouble finding what they needed in the earlier version."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 307.0,
+      "end": 314.0,
+      "text": " To fix this, they focused on information architecture, which involves organizing the app's screens logically."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 314.0,
+      "end": 320.0,
+      "text": " Sam mapped out the flow of the app so that the home screen offered two clear options,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 320.0,
+      "end": 330.0,
+      "text": " Add Assignment and View Calendar, while less frequently used actions, like Settings, were tucked into a drop-down menu."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 330.0,
+      "end": 338.0,
+      "text": " To visualize this flow, Sam used Miro, a digital whiteboard tool that helped them create a clear and logical layout."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 338.0,
+      "end": 345.0,
+      "text": " This organization made it easier for users to find what they were looking for without feeling overwhelmed."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 345.0,
+      "end": 352.0,
+      "text": " Finally, with a fully designed app, Sam needed to make sure it worked well in real-world use."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 352.0,
+      "end": 358.0,
+      "text": " This step, called Usability Testing, involved giving the app prototype to their friends"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 358.0,
+      "end": 361.0,
+      "text": " and observing how they interacted with it."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 361.0,
+      "end": 367.0,
+      "text": " Sam gathered valuable feedback, such as suggestions to make the Save button bigger"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 367.0,
+      "end": 373.0,
+      "text": " and requests for a color coding feature to organize assignments by subject."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 373.0,
+      "end": 381.0,
+      "text": " To facilitate this testing, Sam used tools like Maze, which provided detailed reports on how users navigated the app"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 381.0,
+      "end": 385.0,
+      "text": " and Zoom to record their friends' interactions."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 385.0,
+      "end": 391.0,
+      "text": " Based on this feedback, Sam made the necessary changes and tested the app again."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 391.0,
+      "end": 398.0,
+      "text": " After several iterations, users found the app simple, intuitive and effective."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 398.0,
+      "end": 404.0,
+      "text": " After following these steps and using these tools, Sam's app transformed."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 404.0,
+      "end": 413.0,
+      "text": " What was once a confusing and cluttered design became a user-friendly, visually appealing and highly functional app."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 413.0,
+      "end": 418.0,
+      "text": " Sam's friends now found it super easy to organize their homework."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 418.0,
+      "end": 424.0,
+      "text": " They loved the intuitive flow, the calming colors and the big, clear buttons."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 424.0,
+      "end": 432.0,
+      "text": " By understanding user needs, creating wireframes, designing thoughtfully and testing the app,"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 432.0,
+      "end": 436.0,
+      "text": " Sam turned their idea into something truly useful."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 436.0,
+      "end": 439.0,
+      "text": " This is the power of UIUX."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 439.0,
+      "end": 444.0,
+      "text": " It helps solve real problems and creates designs that people love to use."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 444.0,
+      "end": 448.0,
+      "text": " Which tool is best for creating wireframes and app designs?"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 448.0,
+      "end": 455.0,
+      "text": " A. Google Forms B. Figma C. Canva D. Maze"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 455.0,
+      "end": 463.0,
+      "text": " Let us know your answer in the comments below and three lucky winners will get a chance to win an Amazon voucher."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 463.0,
+      "end": 468.0,
+      "text": " We hope that you enjoyed this video and found it informative and exciting."
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 468.0,
+      "end": 476.0,
+      "text": " If yes, then we would appreciate a thumbs up, a gentle reminder to get subscribed to SimplyLearn"
+    },
+    {
+      "number": "12__UI_UX_Explained_In_8_Minutes___UI_UX_Design_For_Beginners___UI_UX_Design_Basics___Simplilearn.mp4",
+      "start": 476.0,
+      "end": 481.0,
+      "text": " and click that bell icon to never miss any updates from SimplyLearn."
+    }
+  ],
+  "text": " Hi there, meet Sam. Sam is a curious college student who loves technology, but doesn't really know much about how things are designed on apps and websites. One day, Sam's best friend showed them a clunky old website. It was hard to read, buttons didn't work properly, and the colors hurt Sam's eyes. Sam said, why is this website so bad? Sam started doing research online, trying to understand how websites are designed and how they can improve. That's when Sam stumbled into the exciting world of UI and UX. Let's go on a journey with Sam to find out what UI-UX is and why it's so important. Sam learned that UI stands for user interface. It's what you see on a screen, buttons, colors, text, and layout. Think of it like the controls on a video game or the dashboard of a car. If the interface is well designed, you know exactly where to press or click without even thinking about it. UX, on the other hand, stands for user experience. It's all about how you feel when using a website or an app. Does it make your life easier or harder? For example, if you can easily find what you're looking for, the UX is good. If you feel confused or frustrated, the UX isn't doing its job. Together, UI and UX are like the perfect recipe. UI is the presentation, the look and feel, while UX is the flavor, making sure the whole experience is enjoyable and effective. Sam had an idea for an app that helped students organize their homework. But every time they showed the app designed to their friends, the feedback was disappointing. The buttons were too small to tap. Nobody could figure out where to add assignments. The colors were so bright that it hurt their eyes. The app felt messy, like too much was happening on one screen. Sam realized something important. The way the app looked, UI, and the way it worked, UX weren't right. That's when Sam decided to dive into the world of UI, UX to fix it. Sam realized that to create a great homework organization app, they needed to start by understanding what users truly wanted. Instead of guessing, Sam decided to talk to their friends, asking them questions like, How do you currently organize your homework? What frustrates you about it? They also observed their friends using similar apps to see what worked well and what didn't. To make this process easier, Sam used tools like Google Forms to create surveys and collect feedback and notion to organize the responses into categories like Must have features and common issues. By the end of this research, Sam discovered that users wanted an app that was simple, fast, and visually calming, with features like an easy way to add assignments and a color coding system for subjects. With a clear understanding of user needs, Sam moved on to sketching a plan for the app. This stage, called wireframing, was all about creating a basic outline of the app's structure without worrying about colors or details. Sam drew a rough sketch of the home screen, ensuring it had large, clear buttons for essential actions like add assignment and view calendar. They also planned a smooth navigation flow so users could easily move from one screen to another without feeling lost. To bring these sketches to life, Sam used tools like Figma, a beginner-friendly tool for creating digital wireframes, and Balsami, which allowed them to brainstorm quickly with hand-drawn style designs. This step helped Sam focus on the app's structure and how users would interact with it. Once the wireframes were ready, it was time to think about how the app would look. This stage, called visual design, was about choosing colors, fonts, and icons that would make the app visually appealing and user-friendly. Sam selected soft pastel colors to create a calming vibe and picked clean, simple fonts that were easy to read, even on small screens. To make the app more intuitive, they added friendly, recognizable icons, such as a calendar icon for the View Calendar button. Sam relied on tools like Canva to experiment with different visual styles and create mood boards and coolers to generate harmonious color schemes. This step ensured the app looked professional and consistent while being pleasant to use. While the app's design was taking shape, Sam noticed that users had trouble finding what they needed in the earlier version. To fix this, they focused on information architecture, which involves organizing the app's screens logically. Sam mapped out the flow of the app so that the home screen offered two clear options, Add Assignment and View Calendar, while less frequently used actions, like Settings, were tucked into a drop-down menu. To visualize this flow, Sam used Miro, a digital whiteboard tool that helped them create a clear and logical layout. This organization made it easier for users to find what they were looking for without feeling overwhelmed. Finally, with a fully designed app, Sam needed to make sure it worked well in real-world use. This step, called Usability Testing, involved giving the app prototype to their friends and observing how they interacted with it. Sam gathered valuable feedback, such as suggestions to make the Save button bigger and requests for a color coding feature to organize assignments by subject. To facilitate this testing, Sam used tools like Maze, which provided detailed reports on how users navigated the app and Zoom to record their friends' interactions. Based on this feedback, Sam made the necessary changes and tested the app again. After several iterations, users found the app simple, intuitive and effective. After following these steps and using these tools, Sam's app transformed. What was once a confusing and cluttered design became a user-friendly, visually appealing and highly functional app. Sam's friends now found it super easy to organize their homework. They loved the intuitive flow, the calming colors and the big, clear buttons. By understanding user needs, creating wireframes, designing thoughtfully and testing the app, Sam turned their idea into something truly useful. This is the power of UIUX. It helps solve real problems and creates designs that people love to use. Which tool is best for creating wireframes and app designs? A. Google Forms B. Figma C. Canva D. Maze Let us know your answer in the comments below and three lucky winners will get a chance to win an Amazon voucher. We hope that you enjoyed this video and found it informative and exciting. If yes, then we would appreciate a thumbs up, a gentle reminder to get subscribed to SimplyLearn and click that bell icon to never miss any updates from SimplyLearn."
+}

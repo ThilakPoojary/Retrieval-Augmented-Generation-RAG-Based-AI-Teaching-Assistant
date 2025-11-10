@@ -1,0 +1,14 @@
+flask
+openai
+ffmpeg-python
+openai-whisper
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
+torch
+gunicorn
+transformers
+sentence-transformers
+faiss-cpu
