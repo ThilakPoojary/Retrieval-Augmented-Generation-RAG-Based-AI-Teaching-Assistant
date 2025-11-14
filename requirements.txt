@@ -10,4 +10,7 @@ torchaudio
 ffmpeg-python
 gunicorn
 pymupdf
-
+transformers
+sentence-transformers
+openai-whisper
+python-dotenv
