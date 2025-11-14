@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import whisper
 from sklearn.metrics.pairwise import cosine_similarity
-from flask import Flask, request, jsonify, render_template, flash, redirect, url_for
+from flask import Flask, request, jsonify, render_template_string, flash, redirect, url_for
 from werkzeug.utils import secure_filename  # <-- THE FIX IS HERE
 
 app = Flask(__name__)
@@ -73,13 +73,451 @@ def inference_api(prompt_text):
         print(f"Error during LLM inference: {e}")
         return None
 
+# === HTML PAGE (embedded, preserved exactly) ===
+HTML_PAGE = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Dark Mode Theme --- */
+        :root {
+            --primary-color: #9b59b6; /* Amethyst */
+            --gradient-start: #8e44ad; /* Wisteria */
+            --gradient-end: #3498db;  /* Peter River */
+            
+            --bg-color: #121212;      /* Near Black */
+            --card-bg: #1e1e1e;      /* Dark Grey */
+            --text-color: #ecf0f1;    /* Clouds */
+            --text-light: #95a5a6;    /* Silver */
+            --border-color: #34495e;  /* Wet Asphalt */
+            
+            --success-bg: #1a3a1a;
+            --success-text: #a0e0a0;
+            --success-border: #2a5c2a;
+            
+            --error-bg: #3a1a1a;
+            --error-text: #e0a0a0;
+            --error-border: #5c2a2a;
+            
+            --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Base & Reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* --- Title --- */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* --- Card Layout --- */
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary-color);
+        }
+
+        /* --- Flash Messages (Alerts) --- */
+        .flash {
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .flash.error {
+            background-color: var(--error-bg);
+            color: var(--error-text);
+            border: 1px solid var(--error-border);
+        }
+        .flash.success {
+            background-color: var(--success-bg);
+            color: var(--success-text);
+            border: 1px solid var(--success-border);
+        }
+        .flash::before {
+            content: '⚠️';
+            font-size: 1.5rem;
+        }
+        .flash.success::before {
+            content: '✅';
+        }
+        
+        /* --- Base Form Styles --- */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        /* --- THE CUSTOM FILE BUTTON --- */
+        input[type="file"] {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        .file-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .file-label:hover,
+        .file-label.dragover {
+            border-color: var(--primary-color);
+            background-color: #2c2c2c;
+        }
+        .file-label svg {
+            width: 50px;
+            height: 50px;
+            fill: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .file-label strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .file-label span {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        #file-name {
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-light);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* --- Main Button --- */
+        .button {
+            display: inline-block;
+            padding: 0.9rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(142, 68, 173, 0.2);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(142, 68, 173, 0.3);
+        }
+        .button:disabled {
+            background: #444;
+            color: #777;
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* --- Text Input --- */
+        .text-input {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background-color: #2c2c2c;
+            color: var(--text-color);
+        }
+        .text-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.3);
+        }
+        
+        /* --- Q&A Form --- */
+        .qa-form {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+        .qa-form .text-input {
+            flex-grow: 1;
+        }
+        .qa-form .button {
+            flex-shrink: 0;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        
+        /* --- Results --- */
+        .results-card {
+            border-top: 4px solid var(--primary-color);
+        }
+        .answer {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            white-space: pre-wrap; /* Keeps formatting from LLM */
+        }
+        .source-item {
+            background-color: #222;
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+        .source-item strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .source-item .timestamp {
+            display: inline-block;
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
+        .source-item .text {
+            font-style: italic;
+            color: var(--text-light);
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        /* --- Loading Spinner (for upload) --- */
+        .loader-overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 6px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="loader-overlay" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <h1>🤖 AI Video Query</h1>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="card">
+            <h2>1. Upload Video</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data" id="upload-form">
+                
+                <input type="file" name="file" id="file-upload" accept="video/*" required>
+                <label for="file-upload" class="file-label" id="file-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6C4.9 2 4 2.9 4 4v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6zM8 14h8v2H8v-2zM8 11h8v2H8v-2zM8 8h4v2H8V8z"/></svg>
+                    <strong>Choose a file</strong>
+                    <span>or drag and drop</span>
+                </label>
+                <span id="file-name">No file selected</span>
+                
+                <button type="submit" class="button">Upload & Process Video</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>2. Ask a Question</h2>
+            {% if video_name %}
+                <p style="text-align: center; margin-bottom: 1.5rem; font-weight: 500;">
+                    Ready to query: <strong>{{ video_name }}</strong>
+                </p>
+            {% else %}
+                <p style="text-align: center; margin-bottom: 1.5rem; color: var(--text-light);">
+                    Please upload a video first.
+                </p>
+            {% endif %}
+            
+            <form action="/ask" method="POST" class="qa-form">
+                <input type="text" 
+                       name="question" 
+                       class="text-input"
+                       placeholder="e.g., 'What is a neural network?'" 
+                       value="{{ query or '' }}" 
+                       {% if not video_name %}disabled{% endif %}>
+                
+                <button type="submit" 
+                        class="button" 
+                        {% if not video_name %}disabled{% endif %}>
+                    Ask
+                </button>
+            </form>
+        </div>
+
+        {% if answer %}
+            <div class="card results-card">
+                <h2>💡 Answer</h2>
+                <div class="answer">{{ answer }}</div>
+
+                {% if sources %}
+                    <div class="sources">
+                        <h3>📚 Relevant Video Chunks Found</h3>
+                        {% for source in sources %}
+                            <div class="source-item">
+                                <strong>Video:</strong> {{ source.number }}
+                                <span class="timestamp">{{ source.timestamp }}</span>
+                                <div class="text">"{{ source.text }}"</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('file-upload');
+        const fileNameDisplay = document.getElementById('file-name');
+        const uploadForm = document.getElementById('upload-form');
+        const loader = document.getElementById('loader');
+        const fileLabel = document.getElementById('file-label');
+
+        // Show selected file name
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = e.target.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'No file selected';
+            }
+        });
+
+        // Show loader on form submit
+        uploadForm.addEventListener('submit', () => {
+            // Check if file is selected
+            if (fileInput.files.length > 0) {
+                loader.style.display = 'flex';
+            }
+        });
+
+        // Add drag & drop visual cues
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, () => fileLabel.classList.add('dragover'), false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, () => fileLabel.classList.remove('dragover'), false);
+        });
+
+        fileLabel.addEventListener('drop', (e) => {
+            fileInput.files = e.dataTransfer.files;
+            fileNameDisplay.textContent = fileInput.files[0].name;
+        }, false);
+
+    </script>
+</body>
+</html>
+'''
+
 # === Flask Routes ===
 
 @app.route("/")
 def home():
     """Renders the main page."""
-    return render_template(
-        "index.html", 
+    return render_template_string(
+        HTML_PAGE, 
         video_name=current_video_name
     )
 
@@ -223,8 +661,8 @@ def ask_question():
         })
 
     # 6. Render the page with the answer
-    return render_template(
-        "index.html",
+    return render_template_string(
+        HTML_PAGE,
         video_name=current_video_name,
         answer=answer,
         sources=sources,
