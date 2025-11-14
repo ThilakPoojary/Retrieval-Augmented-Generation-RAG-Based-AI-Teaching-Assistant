@@ -237,4 +237,4 @@ if __name__ == "__main__":
     if whisper_model is None:
         print("Exiting: Whisper model failed to load.")
     else:
-        app.run(host="0.0.0.0", port=5000, debug=True)
+        app.run(host="0.0.0.0", port=7860, debug=True)
